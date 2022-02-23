@@ -10,7 +10,7 @@ const WeatherApp =()=>{
     useEffect( ()=>{
 
         const fetchApi = async ()=>{
-            const url=`http://api.openweathermap.org/data/2.5/weather?q=${search}&appid=cb195e8e82e967b1ea040845dfe7d3a4`
+            const url=`http://api.openweathermap.org/data/2.5/weather?q=${search}&appid=`
             const response = await fetch(url);
             const resJson=await response.json();
 
